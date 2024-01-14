@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a363c6a721.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="icon" href="src/img/fb.png">
+    <title>Daftar | Facebook</title>
+</head>
+
+<body class="bg-slate-200">
+    <!-- Container start -->
+    <div class="container flex flex-wrap mx-auto bg-white w-96 mt-32 rounded-lg shadow-md">
+        <div class="px-4">
+            <h2 class="text-2xl font-semibold">Daftar</h2>
+            <p class="text-slate-400">Ini cepat dan mudah</p>
+        </div>
+        <hr class="h-px w-full my-8 bg-black border-1 mt-1 mb-1">
+        <div class="grid md:grid-cols-2 px-4 py-2 gap-2 justify-center items-center mx-auto">
+            <input type="text" placeholder="Nama Depan" class="border outline-sky-300 rounded-md px-2 h-12">
+            <input type="text" placeholder="Nama Belakang" class="border outline-sky-300 rounded-md px-2 h-12">
+            <input type="email" placeholder="Email atau nomor telepon" class="border outline-sky-300 rounded-md px-2 h-12 w-[350px]"><br>
+            <input type="password" placeholder="Kata sandi baru" class="border outline-sky-300 rounded-md px-2 h-12 w-[350px]">
+        </div>
+        <div class="flex px-4">
+            <p class="text-slate-600 text-xs mb-6">Tanggal Lahir</p>
+        </div>
+        <div class="flex justify-between mt-4">
+            <select name="tanggal" id="date">
+                <option value="tanggal">1</option>
+            </select>
+            
+            <select name="month" id="bulan">
+                <option value="bulan">januari</option>
+            </select>
+            <select name="tahun" id="year">
+                <option value="tahun">2000</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Container end -->
+</body>
+</html>

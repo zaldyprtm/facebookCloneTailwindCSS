@@ -5,41 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a363c6a721.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/output.css">
+    <!-- <script src="src/js/script.js"></script> -->
     <link rel="icon" href="src/img/fb.png">
+
     <title>Daftar | Facebook</title>
 </head>
 
 <body class="bg-slate-200">
     <!-- Container start -->
-    <div class="container flex flex-wrap mx-auto bg-white w-96 mt-32 rounded-lg shadow-md">
+    <div class="container flex flex-wrap mx-auto bg-white w-96 mt-32 rounded-lg shadow-md flex-col">
         <div class="px-4">
-            <h2 class="text-2xl font-semibold">Daftar</h2>
+            <h2 class="text-4xl font-bold">Daftar</h2>
             <p class="text-slate-400">Ini cepat dan mudah</p>
         </div>
         <hr class="h-px w-full my-8 bg-black border-1 mt-1 mb-1">
+        <form action="" id="genderCheckbox" class="items-center justify-center">
         <div class="grid md:grid-cols-2 px-4 py-2 gap-2 justify-center items-center mx-auto">
             <input type="text" placeholder="Nama Depan" class="border outline-sky-300 rounded-md px-2 h-12">
-            <input type="text" placeholder="Nama Belakang" class="border outline-sky-300 rounded-md px-2 h-12">
+            <input type="text" placeholder="Nama Belakang" class="border outline-sky-300 rounded-md px-2 h-12 w-[165px]">
             <input type="email" placeholder="Email atau nomor telepon" class="border outline-sky-300 rounded-md px-2 h-12 w-[350px]"><br>
             <input type="password" placeholder="Kata sandi baru" class="border outline-sky-300 rounded-md px-2 h-12 w-[350px]">
         </div>
-        <div class="flex px-4">
-            <p class="text-slate-600 text-xs mb-6">Tanggal Lahir</p>
+        <div class="flex px-5">
+            <p class="text-slate-600 text-xs mb-2">Tanggal Lahir</p>
         </div>
-        <div class="flex justify-between mt-4">
-            <select name="tanggal" id="date">
+        <div class="flex px-4 justify-between mt-1 gap-3 mb-2 mx-auto items-center mr-3 text-center">
+            <select name="tanggal" id="date" class="w-24 border-2 h-8 rounded-md">
                 <option value="tanggal">1</option>
             </select>
             
-            <select name="month" id="bulan">
+            <select name="month" id="bulan" class="w-24 border-2 h-8 rounded-md">
+                <option value="bulan">januari</option>
                 <option value="bulan">januari</option>
             </select>
-            <select name="tahun" id="year">
+            <select name="tahun" id="year" class="w-32 border-2 h-8 rounded-md ml-2">
+                <option value="tahun">2000</option>
                 <option value="tahun">2000</option>
             </select>
         </div>
+        <div class="flex px-5">
+            <p class="text-xs text-slate-600 mb-2 text-center">Jenis kelamin</p>
+        </div>
+        <div class="flex mx-auto items-center justify-between mr-5">
+           <div class="border-2 rounded-md h-8 w-[115px] flex ml-4">
+            <p class="px-2 text-sm py-1">Perempuan</p>
+            <input type="checkbox">
+           </div>
+
+           <div class="border-2 rounded-md h-8 w-24 flex gap-1">
+            <p class="px-2 text-sm py-1">Laki-laki</p>
+            <input type="checkbox">
+           </div>
+
+           <div id="genderForm" class="border-2 rounded-md h-8 w-24 flex gap-1 ml-2 mr-2">
+            <p class="px-2 text-sm py-1">Khusus</p>
+            <input type="checkbox">
+            <div id="genderForm" class="hidden">
+                <select id="gender" name="gender">
+                  <option value="male">Laki-laki</option>
+                  <option value="female">Perempuan</option>
+                </select>
+              </div>
+           </div>
+        </div>
+        </form>
+        <div class="px-4 mt-1 mb-4">
+            <p class="text-slate-500 text-[10px]">Orang yang menggunakan layanan kami dapat mengunggah informasi kontak Anda ke Facebook. <a href="#" class="text-sky-600 hover:underline hover:opacity-80">Pelajari selengkapnya</a></p>
+        </div>
+
+        <div class="px-4 mb-6">
+            <p class="text-slate-500 text-[10px]">Dengan mengklik Daftar, Anda menyetujui <a href="#" class="text-sky-600 hover:underline hover:opacity-80">Ketentuan</a>,<a href="#" class="text-sky-600 hover:underline hover:opacity-80">Kebijakan Privasi,</a> dan <a href="#" class="text-sky-600 hover:underline hover:opacity-80">Kebijakan Cookie</a> kami. Anda akan menerima Notifikasi SMS dari kami dan bisa berhenti kapan saja.</p>
+        </div>
+
+        <div class="mb-8 mt-5 flex mx-auto">
+            <a href="#" class="h-9 items-center justify-center py-1 bg-green-500 hover:opacity-80 text-center text-white font-semibold rounded-lg mx-auto w-[200px]">Daftar</a>
+        </div>
     </div>
-    
     <!-- Container end -->
+
+    <!--Footer start  -->
+    <div class="footer bg-white mt-20 my-2">
+        <div class="flex px-4 items-center justify-center my-5 py-2 gap-2 text-xs text-slate-500">
+            <a href="#" class="hover:underline hover:text-sky-500">Bahasa Indonesia</a>
+            <a href="#" class="hover:underline hover:text-sky-500">English</a>
+            <a href="#" class="hover:underline hover:text-sky-500">Bahasa Melayu</a>
+            <a href="#" class="hover:underline hover:text-sky-500">Basa Jawa</a>
+            <a href="#" class="hover:underline hover:text-sky-500">日本語</a>
+            <a href="#" class="hover:underline hover:text-sky-500">لعربية</a>
+            <a href="#" class="hover:underline hover:text-sky-500">Français (France)</a>
+            <a href="#" class="hover:underline hover:text-sky-500">Español</a>
+            <a href="#" class="hover:underline hover:text-sky-500">한국어</a>
+            <a href="#" class="hover:underline hover:text-sky-500">Português (Brasil)</a>
+            <a href="#" class="hover:underline hover:text-sky-500">Deutsch</a>
+            <span class="hover:underline cursor-pointer hover:scale-75"><i class="fa-regular fa-square-plus fa-fade"></i></span>
+        </div>
+        <div class="flex flex-wrap px-4 items-center justify-center py-2 gap-2 text-xs text-slate-500">
+            <a href="#">Daftar</a>
+            <a href="#">Masuk</a>
+            <a href="#">Messenger</a>
+            <a href="#">Facebook Lite</a>
+            <a href="#">Video</a>
+            <a href="#">Tempat</a>
+            <a href="#">Game</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Meta Pay</a>
+            <a href="#">Meta Store</a>
+            <a href="#">Meta Quest</a>
+            <a href="#">Instagram</a>
+            <a href="#">Threads</a>
+            <a href="#">Penggalangan Dana</a>
+            <a href="#">Layanan</a> 
+            <a href="#">Pusat Informasi Pemilu</a> 
+            <a href="#">Kebijakan Privasi</a> 
+            <a href="#">Pusat Privasi</a> 
+            <a href="#">Grup</a> 
+            <a href="#">Tentang</a> 
+            <a href="#">Buat Iklan</a> 
+            <a href="#">Buat Halaman</a> 
+            <a href="#">Buat Developer</a> 
+            <a href="#">karier</a> 
+            <a href="#">Cookie</a> 
+            <a href="#">Pilihan Iklan</a> 
+            <a href="#">Ketentuan</a> 
+            <a href="#">Bantuan</a> 
+            <a href="#">Pengunggahan Kontak & Non-PenggunaPengaturan</a> 
+        </div>
+        <div class="flex justify-center items-center">
+            <p class="text-slate-500 text-xs">Meta &#169; 2024 </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+<!--     
+    <script src="src/js/script.js"></script> -->
 </body>
 </html>
